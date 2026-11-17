@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Nom du site — Timeline Zelda</title>
+
+  <!-- Police Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,800;1,300&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="site">
+
+    <!-- En-tête -->
+    <header class="entete">
+      <div class="identite">
+        <!-- Remplace ce chemin par celui de ton illustration -->
+        <img
+          class="identite__illustration"
+          src="images/illustration.svg"
+          alt="Illustration de personnages de Zelda"
+        >
+
+        <p class="identite__signature">
+          Signature de Lohan
+        </p>
+      </div>
+
+      <h1 class="entete__titre">Nom du site</h1>
+    </header>
+
+    <div class="corps">
+
+      <!-- Navigation des différentes timelines -->
+      <nav class="navigation" aria-labelledby="titre-navigation">
+        <h2 class="navigation__titre" id="titre-navigation">
+          Timeline
+        </h2>
+
+        <div class="timeline">
+
+          <section class="timeline__branche">
+            <h3>Début de la légende</h3>
+
+            <ul class="timeline__jeux">
+              <li class="timeline__jeu">
+                <a href="#jeu-1">Jeu / épisode 1</a>
+              </li>
+              <li class="timeline__jeu">
+                <a href="#jeu-2">Jeu / épisode 2</a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="timeline__branche">
+            <h3>Timeline de la défaite</h3>
+
+            <ul class="timeline__jeux">
+              <li class="timeline__jeu">
+                <a href="#jeu-3">Jeu / épisode 3</a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="timeline__branche">
+            <h3>Timeline de l’enfance</h3>
+
+            <ul class="timeline__jeux">
+              <li class="timeline__jeu">
+                <a href="#jeu-4">Jeu / épisode 4</a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="timeline__branche">
+            <h3>Timeline de l’âge adulte</h3>
+
+            <ul class="timeline__jeux">
+              <li class="timeline__jeu">
+                <a href="#jeu-5">Jeu / épisode 5</a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="timeline__branche">
+            <h3>Univers Breath of the Wild</h3>
+
+            <ul class="timeline__jeux">
+              <li class="timeline__jeu">
+                <a href="#jeu-6">Jeu / épisode 6</a>
+              </li>
+            </ul>
+          </section>
+
+        </div>
+      </nav>
+
+      <!-- Informations sur les jeux -->
+      <main class="contenu" aria-label="Présentation des jeux">
+
+        <article class="jeu" id="jeu-1" aria-labelledby="titre-jeu-1">
+          <header class="jeu__entete">
+            <img
+              class="jeu__image"
+              src="images/jeu-1.jpg"
+              alt="Jaquette du jeu 1"
+            >
+            <h2 class="jeu__titre" id="titre-jeu-1">
+              Nom du jeu 1 (date de sortie)
+            </h2>
+          </header>
+
+          <div class="jeu__infos">
+            <p>Informations et présentation du jeu 1.</p>
+          </div>
+        </article>
+
+        <p class="contenu__suite">Défiler pour voir la suite</p>
+
+        <article class="jeu" id="jeu-2" aria-labelledby="titre-jeu-2">
+          <header class="jeu__entete">
+            <img
+              class="jeu__image"
+              src="images/jeu-2.jpg"
+              alt="Jaquette du jeu 2"
+              loading="lazy"
+            >
+            <h2 class="jeu__titre" id="titre-jeu-2">
+              Nom du jeu 2 (date de sortie)
+            </h2>
+          </header>
+
+          <div class="jeu__infos">
+            <p>Informations et présentation du jeu 2.</p>
+          </div>
+        </article>
+
+        <article class="jeu" id="jeu-3" aria-labelledby="titre-jeu-3">
+          <header class="jeu__entete">
+            <img
+              class="jeu__image"
+              src="images/jeu-3.jpg"
+              alt="Jaquette du jeu 3"
+              loading="lazy"
+            >
+            <h2 class="jeu__titre" id="titre-jeu-3">
+              Nom du jeu 3 (date de sortie)
+            </h2>
+          </header>
+
+          <div class="jeu__infos">
+            <p>Informations et présentation du jeu 3.</p>
+          </div>
+        </article>
+
+        <article class="jeu" id="jeu-4" aria-labelledby="titre-jeu-4">
+          <header class="jeu__entete">
+            <img
+              class="jeu__image"
+              src="images/jeu-4.jpg"
+              alt="Jaquette du jeu 4"
+              loading="lazy"
+            >
+            <h2 class="jeu__titre" id="titre-jeu-4">
+              Nom du jeu 4 (date de sortie)
+            </h2>
+          </header>
+
+          <div class="jeu__infos">
+            <p>Informations et présentation du jeu 4.</p>
+          </div>
+        </article>
+
+        <article class="jeu" id="jeu-5" aria-labelledby="titre-jeu-5">
+          <header class="jeu__entete">
+            <img
+              class="jeu__image"
+              src="images/jeu-5.jpg"
+              alt="Jaquette du jeu 5"
+              loading="lazy"
+            >
+            <h2 class="jeu__titre" id="titre-jeu-5">
+              Nom du jeu 5 (date de sortie)
+            </h2>
+          </header>
+
+          <div class="jeu__infos">
+            <p>Informations et présentation du jeu 5.</p>
+          </div>
+        </article>
+
+        <article class="jeu" id="jeu-6" aria-labelledby="titre-jeu-6">
+          <header class="jeu__entete">
+            <img
+              class="jeu__image"
+              src="images/jeu-6.jpg"
+              alt="Jaquette du jeu 6"
+              loading="lazy"
+            >
+            <h2 class="jeu__titre" id="titre-jeu-6">
+              Nom du jeu 6 (date de sortie)
+            </h2>
+          </header>
+
+          <div class="jeu__infos">
+            <p>Informations et présentation du jeu 6.</p>
+          </div>
+        </article>
+
+      </main>
+    </div>
+  </div>
+</body>
+</html>
+
