@@ -280,3 +280,11 @@ img {
 .jeu ~ .jeu {
   margin-top: 8%;
 }
+
+.jeu.is-hidden {
+  display: none;
+}
+
+.timeline__branche.active h3 {
+  font-weight: 800;
+}
