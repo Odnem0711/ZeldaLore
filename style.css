@@ -169,7 +169,7 @@ img {
 /* Zone principale */
 .contenu {
   min-width: 0;
-  padding: 2.1583% 4.1367%;
+  padding: 3% 4.1367%;
   background: var(--fond-contenu);
   overflow-wrap: anywhere;
 }
