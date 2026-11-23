@@ -26,9 +26,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-head {
-  font-family: "Triforce", sans-serif;
-}
+
 
 h1,
 h2,
@@ -99,6 +97,7 @@ img {
   font-weight: 800;
   text-align: center;
   overflow-wrap: anywhere;
+  font-family: "Triforce";
 }
 
 /* Navigation à gauche, contenu à droite */
