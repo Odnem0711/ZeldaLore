@@ -3,12 +3,19 @@
     src: url('Font/Triforce.ttf') format('truetype');
 }
 /* La police Inter doit être chargée dans ta page. */
+@font-face {
+    font-family : Triforce;
+    src: url(Triforce.ttf) format('truetype');
+}
+
 :root {
   --fond: #6bb598;
   --vert-fonce: #39795d;
   --fond-contenu: #aea282;
   --violet: #5d5fef;
 }
+
+
 
 *,
 *::before,
@@ -22,8 +29,10 @@ body {
   margin: 0;
   color: #000;
   background: var(--fond);
-  font-family: "Inter", sans-serif;
+  font-family: "Jersey 20", sans-serif;
 }
+
+
 
 h1,
 h2,
@@ -90,10 +99,11 @@ img {
 #entete__titre {
   flex: 1;
   min-width: 0;
-  font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+  font-size: clamp(7.5rem, 2.5vw, 15rem);
   font-weight: 800;
   text-align: center;
   overflow-wrap: anywhere;
+  font-family: "Triforce";
 }
 
 /* Navigation à gauche, contenu à droite */
