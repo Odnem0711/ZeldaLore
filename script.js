@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const article = document.getElementById(id);
       if (article) {
-        article.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        article.scrollIntoView({ behavior: 'smooth', block: 'start' });
         history.pushState(null, '', '#' + id);
       }
     });
