@@ -1,8 +1,12 @@
+@font-face {
+    font-family: 'Triforce';
+    src: url('Font/Triforce.ttf') format('truetype');
+}
 /* La police Inter doit être chargée dans ta page. */
 :root {
   --fond: #6bb598;
   --vert-fonce: #39795d;
-  --fond-contenu: #E8D8B5;
+  --fond-contenu: #aea282;
   --violet: #5d5fef;
 }
 
