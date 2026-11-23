@@ -113,9 +113,10 @@ img {
 
 .navigation__titre {
   margin-bottom: 6.8966%;
-  font-size: 1.325rem;
+  font-size: 2.5rem;
   font-weight: 400;
   font-family: 'Triforce', sans-serif;
+  text-align: center;
 }
 
 .timeline {
