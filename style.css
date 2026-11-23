@@ -205,7 +205,7 @@ img {
 }
 
 .jeu__infos {
-  width: 100%;
+  width: 70%;
   margin-top: 1.9608%;
   padding-inline: 3.0392%;
   font-size: clamp(1rem, 2.7778vw, 2.5rem);
