@@ -93,7 +93,7 @@ img {
 .entete__titre {
   flex: 1;
   min-width: 0;
-  font-size: clamp(1.5rem, 2.5vw, 7rem);
+  font-size: clamp(1.5rem, 2.5vw, 15rem);
   font-weight: 800;
   text-align: center;
   overflow-wrap: anywhere;
