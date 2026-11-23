@@ -6,6 +6,11 @@
   --violet: #5d5fef;
 }
 
+@font-face {
+    font-family : Triforce;
+    src: url(Triforce.ttf);
+}
+
 *,
 *::before,
 *::after {
