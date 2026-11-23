@@ -172,7 +172,7 @@ img {
   padding: 2.1583% 4.1367%;
   background: var(--fond-contenu);
   overflow-wrap: anywhere;
-  overflow-block: visible;
+  overflow-block: scroll;
 }
 
 /* Fiche d’un jeu */
