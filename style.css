@@ -1,7 +1,7 @@
 /* La police Inter doit être chargée dans ta page. */
 @font-face {
     font-family : Triforce;
-    src: url(Triforce.ttf) format("woff2");
+    src: url(Triforce.ttf) format('truetype');
 }
 
 :root {
