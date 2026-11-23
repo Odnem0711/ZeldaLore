@@ -208,7 +208,7 @@ img {
   width: 100%;
   margin-top: 1.9608%;
   padding-inline: 3.0392%;
-  font-size: clamp(1rem, 2.7778vw, 2.5rem);
+  font-size: clamp(1rem, 2.7778vw, 1.5rem);
   line-height: 1.4;
 }
 
