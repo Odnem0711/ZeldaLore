@@ -182,6 +182,16 @@ img {
   overflow-wrap: anywhere;
 }
 
+.timeline__titre__jeu {
+  flex: 1;
+  min-width: 0;
+  padding-top: 2.1569%;
+  font-family: 'Triforce', sans-serif;
+  font-size: clamp(1.5rem, 3.3333vw, 3rem);
+  font-weight: 300;
+  font-style: italic;
+}
+
 /* Fiche d’un jeu */
 .jeu {
   width: 100%;
