@@ -115,6 +115,7 @@ img {
   margin-bottom: 6.8966%;
   font-size: 1.125rem;
   font-weight: 400;
+  font-family: 'Triforce', sans-serif;
 }
 
 .timeline {
@@ -133,6 +134,7 @@ img {
   font-size: 0.875rem;
   line-height: 1.43;
   font-weight: 400;
+  font-family: 'Triforce', sans-serif;
 }
 
 /* Axe et repères */
@@ -149,6 +151,7 @@ img {
   padding-left: 20.5357%;
   font-size: 0.75rem;
   line-height: 1.5;
+  font-family: 'Triforce', sans-serif;
 }
 
 .timeline__jeu::before {
