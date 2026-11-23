@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('popstate', () => {
     const id = window.location.hash.substring(1);
     const index = findBranchIndex(id);
-    showBranch(index !== -1 ? index : 0);
+    if (index !== -1) showBranch(index);
   });
 
   // On load: show the branch from the URL if there is one, otherwise the first branch

@@ -11,7 +11,9 @@
 *::after {
   box-sizing: border-box;
 }
-
+html{
+  scroll-behavior:smooth;
+}
 body {
   margin: 0;
   color: #000;
@@ -37,7 +39,7 @@ img {
 }
 
 /* Conteneur général */
-.site {
+#site {
   width: 100%;
   min-height: 100svh;
   padding: 1.6667%;
@@ -81,7 +83,7 @@ img {
   line-height: 1.6;
 }
 
-.entete__titre {
+#entete__titre {
   flex: 1;
   min-width: 0;
   font-size: clamp(1.5rem, 2.5vw, 2.25rem);
@@ -288,4 +290,13 @@ img {
 
 .timeline__branche.active h3 {
   font-weight: 800;
+}
+
+#scroll-top{
+  width: 75px;
+  height: 75px;
+  position: fixed;
+  bottom:10px;
+  right: 0px;
+  z-index: 1000;
 }
