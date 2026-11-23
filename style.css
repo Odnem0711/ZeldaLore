@@ -187,7 +187,7 @@ img {
   min-width: 0;
   padding-top: 2.1569%;
   font-family: 'Triforce', sans-serif;
-  font-size: clamp(1.5rem, 3.3333vw, 3rem);
+  font-size: clamp(2rem, 3.3333vw, 4.5rem);
   font-weight: 300;
   font-style: italic;
 }
