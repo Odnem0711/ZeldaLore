@@ -66,3 +66,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const startIndex = findBranchIndex(hash);
   showBranch(startIndex !== -1 ? startIndex : 0);
 });
+
+function ChangeElement(){
+	let link = document.getElementById('original')
+	if (link.getAttribute('href') == "style1.css"){
+		link.setAttribute('href','style2.css');
+	}else{
+		link.setAttribute('href','style1.css');
+	}
+}

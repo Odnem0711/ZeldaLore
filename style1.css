@@ -13,14 +13,13 @@
   --vert-fonce: #39795d;
   --fond-contenu: #aea282;
   --violet: #5d5fef;
+  --vert-clair: #195929;
 }
 
 
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+*{
+    box-sizing: border-box;
 }
 html{
   scroll-behavior:smooth;
@@ -99,7 +98,7 @@ img {
 #entete__titre {
   flex: 1;
   min-width: 0;
-  font-size: clamp(7.5rem, 2.5vw, 15rem);
+  font-size: clamp(3rem, 6vw, 8rem);
   font-weight: 800;
   text-align: center;
   overflow-wrap: anywhere;
@@ -148,6 +147,10 @@ img {
   line-height: 1.43;
   font-weight: 400;
   font-family: 'Triforce', sans-serif;
+}
+
+.timeline__branche h3:hover{
+  text-shadow: 0 0 8px white;
 }
 
 /* Axe et repères */
@@ -215,6 +218,10 @@ img {
   align-items: flex-start;
   gap: 4.3137%;
   width: 100%;
+}
+
+.jeu__entete a{
+  color: var(--vert-clair);
 }
 
 .jeu__image {
