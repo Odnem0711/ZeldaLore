@@ -116,6 +116,15 @@ img {
   min-height: 76.42svh;
 }
 
+.homeCorps {
+  display: grid;
+  <!-- grid-template-columns: 18.9655% 79.8851% -->;
+  <!-- column-gap: 1.1494% -->;
+  align-items: stretch;
+  width: 100%;
+  min-height: 76.42svh;
+}
+
 /* Navigation */
 .navigation {
   min-width: 0;
