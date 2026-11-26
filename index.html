@@ -43,15 +43,12 @@
         <textarea id="messageForm" name="messageForm" rows="15" cols="67" required></textarea>
         <button type="button" onclick="sendMail()">Envoyer par mail</button>
       </form>
-		<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/f8x9h-_OuJg?si=YTMyBdBR7C4uh5Mt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-      <track
-        src="sources/sous-titres-fr.vtt"
-        kind="subtitles"
-        srclang="fr"
-        label="Français"
-        default
-      />
-    </iframe>
+		<video controls width="640">
+      <source src="sources/video/The Legend of Zelda Ocarina of Time - The REAL Sarias Song.mp4" type="video/mp4">
+      <track src="sources/video/sous-titres-fr.vtt" kind="subtitles" srclang="fr" label="Français" default>
+        Votre navigateur ne prend pas en charge la vidéo HTML.
+    </video>
+
         </section>
     </main>
   <a id="scroll-top" href="#entete_titre"><img src="sources/images/fleche.webp" alt="Fleche vers le haut"></a>
