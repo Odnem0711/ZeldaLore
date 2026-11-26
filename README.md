@@ -1,49 +1,68 @@
-# 🗡️ La Timeline de Zelda
+# ZeldaLore
 
-Un site consacré à l’univers de **The Legend of Zelda**, pour découvrir les jeux et comprendre leur place dans les différentes branches de la chronologie.
+ZeldaLore is a website that presents the chronology of The Legend of Zelda saga, game by game. Each branch of the timeline groups the games that belong to the same storyline, and clicking a game opens its description, cover, and official link.
 
-## 🎯 Objectif
+**Live site:** https://odnem0711.github.io/
 
-Présenter la chronologie de Zelda de manière claire et accessible, avec une navigation par timeline et des fiches consacrées aux jeux.
+## Team
 
-## 🌿 Organisation du site
+- Lohan Nantha
+- Anna-Lucia Puddinu
+- Eloise Goulais
+- Lauris Amendola
 
-Le site est organisé autour de cinq grandes parties :
+Department of Computer Science, IUT d'Aix-Marseille Université (AMU), S1 project for the course *Développement d'interfaces Web*.
 
-- Début de la légende
-- Timeline de la défaite
-- Timeline de l’enfance
-- Timeline de l’âge adulte
-- Univers de Breath of the Wild
+## Features
 
-Chaque fiche présente le nom du jeu, sa date de sortie, sa jaquette et des informations sur son histoire.
+- Interactive timeline: click a branch title to show its games, or click a game to jump to its description.
+- Two stylesheets: a green theme and a gold theme, switched with the triforce image in the header, with a sound effect.
+- Contact form that opens a pre-filled email in the visitor's mail client.
+- Embedded YouTube video with a hidden easter egg (Konami code).
+- Responsive layout for smartphones, tablets, and desktops.
+- Scroll-to-top button and a "Back to top" anchor for long pages.
+- SEO: meta description, Open Graph and Twitter tags, JSON-LD structured data, and an "About us" page.
 
-## ✨ Fonctionnalités
+## Project structure
 
-- Navigation vers les fiches depuis la timeline.
-- Consultation des informations sur chaque jeu.
-- Mise en page adaptable aux ordinateurs, tablettes et mobiles.
+```
+project/
+├── index.html
+└── sources/
+    ├── timeline.html
+    ├── about.html
+    ├── script.js
+    ├── style1.css
+    ├── style2.css
+    ├── Font/
+    │   └── Triforce.ttf
+    ├── Sounds/
+    │   ├── sound1.mp3
+    │   └── sound2.mp3
+    └── images/
+        └── ...
+```
 
-## 🛠️ Technologies
+## Technologies
 
-- **HTML5** : structure et contenu.
-- **CSS3** : présentation et adaptation aux écrans.
-- **Figma** : conception des maquettes.
+- HTML5 with semantic elements
+- CSS3 (custom properties, `clamp()`, `aspect-ratio`, grid and flexbox)
+- Vanilla JavaScript (DOM manipulation, `mailto:` links, YouTube embed)
+- Google Fonts (Jersey 20)
 
-## 🚀 Lancer le site
+## Running the project locally
 
-1. Télécharger ou cloner le projet.
-2. Ouvrir `index.html` dans un navigateur.
+Clone the repository, then start a local server from the project folder:
 
-Aucune installation de dépendances n’est nécessaire pour cette version statique.
+```bash
+python -m http.server 8000
+```
 
-## 🚧 Évolutions prévues
+Open `http://localhost:8000` in your browser.
 
-- Compléter les fiches des jeux.
-- Afficher les jeux selon la branche sélectionnée.
-- Centrer la consultation sur le jeu choisi.
+Opening `index.html` directly from the file system can break the stylesheets, sounds, and video, so use a server.
 
-## 📜 À propos
+## Browser support
 
-Projet de fans non officiel. The Legend of Zelda et les éléments associés appartiennent à Nintendo.
+Tested on recent versions of Chrome and Firefox on Windows. Mail links need a mail application configured on the computer.
 
