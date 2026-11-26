@@ -82,16 +82,6 @@ img {
   object-fit: contain;
 }
 
-#identite_signature {
-  position: absolute;
-  top: 81.5789%;
-  left: 4.0541%;
-  width: 78.3784%;
-  color: var(--or);
-  text-align: center;
-  font-size: 0.625rem;
-  line-height: 1.6;
-}
 
 #entete_titre {
   flex: 1;

@@ -83,17 +83,6 @@ img {
   object-fit: contain;
 }
 
-#identite_signature {
-  position: absolute;
-  top: 81.57%;
-  left: 4.05%;
-  width: 78.37%;
-  color: var(--violet);
-  text-align: center;
-  font-size: 0.625rem;
-  line-height: 1.6;
-}
-
 #entete_titre {
   flex: 1;
   min-width: 0;
@@ -116,6 +105,15 @@ img {
   display: grid;
   grid-template-columns: 18.9655% 79.8851%;
   column-gap: 1.15%;
+  align-items: stretch;
+  width: 100%;
+  min-height: 76.42svh;
+}
+
+.homeCorps {
+  display: grid;
+  <!-- grid-template-columns: 18.9655% 79.8851% -->;
+  <!-- column-gap: 1.1494% -->;
   align-items: stretch;
   width: 100%;
   min-height: 76.42svh;
