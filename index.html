@@ -1,49 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>ZeldaLore</title>
-    <meta charset="UTF-8">
+    <head>
+        <title>ZeldaLore</title>
+        <meta charset="UTF-8">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">  
-  <link rel="icon" sizes="32x32" href="sources/images/favicon.ico">
-    <link rel="stylesheet" href="sources/style1.css">
-    <script src="sources/script.js"></script>
-  </head>
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">  
+        <link rel="icon" sizes="32x32" href="sources/images/favicon.ico">
+        <link rel="stylesheet" href="sources/style1.css">
+        <script src="sources/script.js"></script>
+    </head>
 
-  <body>
-  <section id="site">
-    <!-- En-tête -->
-    <header id="entete">
-      <section id="identite">
-        <a href="sources/timeline.html">
-        <!-- Remplace ce chemin par celui de ton illustration -->
-        <img
-          id="identite_illustration"
-          src="#"
-          alt="Illustration de personnages de Zelda"
-        >
-        </a>
-      </section>
-      <h1 id="entete_titre">* ZeldaLore *</h1>
-    </header>
+    <body>
+        <section id="site">
+            <!-- En-tête -->
+            <header id="entete">
+                <section id="identite">
+                    <a href="sources/timeline.html">
+                        <!-- Remplace ce chemin par celui de ton illustration -->
+                        <img
+                                id="identite_illustration"
+                                src="#"
+                                alt="Illustration de personnages de Zelda"
+                                >
+                    </a>
+                </section>
+                <h1 id="entete_titre">* ZeldaLore *</h1>
+            </header>
 
-    <main id="contenu" aria-label="Page d'accueil">
-      <h1>Bienvenue sur ZeldaLore, le site qui vous apprendra l'histoire de la princesse Zelda et de son chevalier Link !</h1>
-      <p>En cliquant sur le logo, vous trouverez la timeline des jeux de l'univers Zelda. Vous pourrez alors la découvrir partie par partie et en apprendre plus sur les jeux qui la composent.</p>
-      <section id="formVideo">
-      <form>
-        <label for="nameForm">Name :</label>
-        <input type="text" id="nameForm" name="nameForm">
-        <br>
-        <label for="messageForm">Message to send to the team :</label>
-        <br>
-        <textarea id="messageForm" name="messageForm" rows="15" cols="67" required></textarea>
-        <button type="button" onclick="sendMail()">Envoyer par mail</button>
-      </form>
-      <iframe id="video" src="https://www.youtube.com/embed/Ztl2P5bCf9I?si=YEjOZsReuoN6NDj1" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-        </section>
-    </main>
+            <main id="contenu" aria-label="Page d'accueil">
+                <h1>Bienvenue sur ZeldaLore, le site qui vous apprendra l'histoire de la princesse Zelda et de son chevalier Link !</h1>
+                <p>En cliquant sur le logo, vous trouverez la timeline des jeux de l'univers Zelda. Vous pourrez alors la découvrir partie par partie et en apprendre plus sur les jeux qui la composent.</p>
+                <section id="formVideo">
+                    <form>
+                        <label for="nameForm">Name :</label>
+                        <input type="text" id="nameForm" name="nameForm">
+                        <br>
+                        <label for="messageForm">Message to send to the team :</label>
+                        <br>
+                        <textarea id="messageForm" name="messageForm" rows="15" cols="67" required></textarea>
+                        <button type="button" onclick="sendMail()">Envoyer par mail</button>
+                    </form>
+                    <iframe id="video" src="https://www.youtube.com/embed/Ztl2P5bCf9I?si=YEjOZsReuoN6NDj1" title="YouTube video player" frameborder="0" allowfullscreen>
+                    </iframe>
+                </section>
+            </main>
 </html>
