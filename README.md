@@ -2,7 +2,7 @@
 
 ZeldaLore is a website that presents the chronology of The Legend of Zelda saga, game by game. Each branch of the timeline groups the games that belong to the same storyline, and clicking a game opens its description, cover, and official link.
 
-**Live site:** https://odnem0711.github.io/
+**Live site:** https://odnem0711.github.io/ZeldaLore
 
 ## Team
 
