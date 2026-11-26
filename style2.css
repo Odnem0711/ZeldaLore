@@ -339,3 +339,18 @@ img {
     width: 100%;
   }
 }
+
+#bottom{
+  margin-top: 2%;
+  padding: 1.5% 2%;
+  text-align: center;
+  background: var(--vert-fonce);
+  color: #fff;
+  font-family: "Jersey 20", sans-serif;
+  font-size: 1.2rem;
+  border:4px solid var(--or) ;
+}
+
+#bottom a{
+  color:var(--fond-contenu);
+}
