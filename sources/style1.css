@@ -404,11 +404,12 @@ button {
 
 #formVideo{
   display: flex;
-
 }
+
 #video{
-  padding-top: 4vw;
-  padding-left: 3vw;
-  width: 50%;
-  height: auto;
+  padding-top: 5%;
+  padding-left: 3%;
+  width: 50vw;
+  aspect-ratio: 16 / 10.5;
+  align-self: flex-start;
 }
