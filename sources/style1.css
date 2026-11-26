@@ -10,8 +10,8 @@
   --fond-contenu: #aea282;
   --violet: #5d5fef;
   --vert-fonce-plus: #195929;
+  --fond-form : #e6ddc5;
 }
-
 
 
 *{
@@ -112,8 +112,8 @@ img {
 
 .homeCorps {
   display: grid;
-  <!-- grid-template-columns: 18.9655% 79.8851% -->;
-  <!-- column-gap: 1.1494% -->;
+  grid-template-columns: 18.9655% 79.8851%;
+  column-gap: 1.1494%;
   align-items: stretch;
   width: 100%;
   min-height: 76.42svh;
@@ -360,4 +360,44 @@ img {
 
 #bottom a{
   color:var(--fond-contenu);
+}
+form {
+  width: min(90%, 40rem);
+ /* margin: clamp(1rem, 3vw, 2.5rem) auto;*/
+  padding: clamp(0.8rem, 2vw, 1.5rem);
+  background: var(--fond-contenu);
+}
+
+label {
+  display: block;
+  margin-top: clamp(0.6rem, 1.5vw, 1rem);
+  font-family: "Jersey 20", sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: clamp(0.4rem, 1vw, 0.6rem);
+  margin-top: 0.3rem;
+  font: inherit;
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  border: 0.2vw solid var(--vert-fonce-plus);
+  background: var(--fond-form);
+}
+
+textarea {
+  min-height: clamp(6rem, 15vh, 10rem);
+}
+
+button {
+  margin-top: clamp(1rem, 2vw, 1.4rem);
+  padding: clamp(0.5rem, 1vw, 0.7rem) clamp(1rem, 2.5vw, 1.8rem);
+  font: inherit;
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  max-width: 100%;
+  cursor: pointer;
+  background: var(--vert-fonce);
+  color: #fff;
+  border: none;
 }

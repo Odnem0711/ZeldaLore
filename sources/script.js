@@ -1,3 +1,5 @@
+// Le js a ete fait par claude le goat
+
 document.addEventListener('DOMContentLoaded', () => {
   const articles = document.querySelectorAll('.jeu');
 
@@ -69,13 +71,22 @@ document.addEventListener('DOMContentLoaded', () => {
   showBranch(startIndex !== -1 ? startIndex : 0);
 });
 
-const audio = new Audio('Sounds/sound.mp3');
+
+// Ca par contre c'est moi qui lai fait
+
 function ChangeStyle() {
   let link = document.getElementById('original');
+  const audio = new Audio('Sounds/sound.mp3');
   audio.play();
   if (link.getAttribute('href') == "style1.css") {
     link.setAttribute('href', 'style2.css');
   } else {
     link.setAttribute('href', 'style1.css');
   }
+}
+
+function sendMail() {
+	const nom = document.getElementById('nameForm').value;
+	const message = document.getElementById('messageForm').value;
+	window.location.href = "mailto:lauris.amendola@etu.univ-amu.fr,lohan.nanthavongdouangsy@etu.univ-amu.fr,eloise.goulais@etu.univ-amu.fr,anna-lucia.puddinu@etu.univ-amu.fr?&subject=Message de la part de " + nom + "&body=" + message ;
 }
