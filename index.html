@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Home Page</title>
+    <title>Zelda Lore</title>
     <meta charset="UTF-8">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,12 +17,12 @@
   <section id="site">
     <!-- En-tête -->
     <header id="entete">
-      <section class="identite">
+      <section id="identite">
         <a href="sources/timeline.html">
         <!-- Remplace ce chemin par celui de ton illustration -->
         <img
           id="identite_illustration"
-          src=""
+          src="#"
           alt="Illustration de personnages de Zelda"
         >
         </a>
@@ -31,9 +31,18 @@
     </header>
 
     <section id="homeCorps">
-		<main id="contenu" aria-label="Page d'accueil">
-			<h1>Bienvenue sur ZeldaLore, le site qui vous apprendra l'histoire de la princesse Zelda et de son chevalier Link !</h1>
-			<p>En cliquant sur le logo, vous trouverez la timeline des jeux de l'univers Zelda. Vous pourrez alors la découvrir partie par partie et en apprendre plus sur les jeux qui la composent.</p>
+    <main id="contenu" aria-label="Page d'accueil">
+      <h1>Bienvenue sur ZeldaLore, le site qui vous apprendra l'histoire de la princesse Zelda et de son chevalier Link !</h1>
+      <p>En cliquant sur le logo, vous trouverez la timeline des jeux de l'univers Zelda. Vous pourrez alors la découvrir partie par partie et en apprendre plus sur les jeux qui la composent.</p>
+      <form>
+        <label for="nameForm">Name :</label>
+        <input type="text" id="nameForm" name="nameForm">
+        <br>
+        <label for="messageForm">Message to send to the team :</label>
+        <br>
+        <textarea id="messageForm" name="messageForm" rows="15" cols="67" required></textarea>
+        <button type="button" onclick="sendMail()">Envoyer par mail</button>
+      </form>
 		</main>
 	</section>
   <a id="scroll-top" href="#entete_titre"><img src="sources/images/fleche.webp" alt="Fleche vers le haut"></a>
