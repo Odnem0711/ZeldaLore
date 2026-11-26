@@ -262,7 +262,7 @@ img {
     background: var(--vert-fonce);
     color: #fff;
     font-family: "Jersey 20", sans-serif;
-    font-size: 1.2rem;
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
     border: 4px solid var(--vert-fonce-plus);
 }
 
@@ -326,6 +326,7 @@ button {
 /* Tablet and mobile */
 @media (max-width: 48rem) {
     #site {
+        min-height: auto;
         padding: 4%;
     }
 
