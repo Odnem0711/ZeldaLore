@@ -76,11 +76,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function ChangeStyle() {
   let link = document.getElementById('original');
-  const audio = new Audio('Sounds/sound.mp3');
-  audio.play();
+  const audio1 = new Audio('Sounds/sound1.mp3');
+  const audio2 = new Audio('Sounds/sound2.mp3');
   if (link.getAttribute('href') == "style1.css") {
+    audio1.play();
     link.setAttribute('href', 'style2.css');
   } else {
+    audio2.play();
     link.setAttribute('href', 'style1.css');
   }
 }
