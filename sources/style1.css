@@ -70,13 +70,12 @@ img {
     aspect-ratio: 148 / 152;
 }
 
-/* Illustration exported from the mockup */
 #identity_image {
     position: absolute;
     top: 8.5%;
     left: 5.4%;
-    width: 80%;
-    height: 67%;
+    width: 90%;
+    height: auto;
     object-fit: contain;
 }
 
