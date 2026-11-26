@@ -176,6 +176,7 @@ img {
   font-size: clamp(0.6rem,1vw,0.875rem);
   line-height: 1.5;
   font-family: 'Triforce', sans-serif;
+    color: #BD8E22;
 }
 
 .timeline_jeu::before {
