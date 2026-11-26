@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Zelda Lore</title>
+    <title>ZeldaLore</title>
     <meta charset="UTF-8">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,10 +30,10 @@
       <h1 id="entete_titre">* ZeldaLore *</h1>
     </header>
 
-    <section id="homeCorps">
     <main id="contenu" aria-label="Page d'accueil">
       <h1>Bienvenue sur ZeldaLore, le site qui vous apprendra l'histoire de la princesse Zelda et de son chevalier Link !</h1>
       <p>En cliquant sur le logo, vous trouverez la timeline des jeux de l'univers Zelda. Vous pourrez alors la découvrir partie par partie et en apprendre plus sur les jeux qui la composent.</p>
+      <section id="formVideo">
       <form>
         <label for="nameForm">Name :</label>
         <input type="text" id="nameForm" name="nameForm">
@@ -43,7 +43,9 @@
         <textarea id="messageForm" name="messageForm" rows="15" cols="67" required></textarea>
         <button type="button" onclick="sendMail()">Envoyer par mail</button>
       </form>
-		</main>
-	</section>
+		<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/f8x9h-_OuJg?si=YTMyBdBR7C4uh5Mt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+        </section>
+    </main>
   <a id="scroll-top" href="#entete_titre"><img src="sources/images/fleche.webp" alt="Fleche vers le haut"></a>
 </html>

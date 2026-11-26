@@ -111,7 +111,7 @@ img {
 }
 
 .homeCorps {
-  display: grid;
+  display: flex;
   grid-template-columns: 18.9655% 79.8851%;
   column-gap: 1.1494%;
   align-items: stretch;
@@ -400,4 +400,15 @@ button {
   background: var(--vert-fonce);
   color: #fff;
   border: none;
+}
+
+#formVideo{
+  display: flex;
+
+}
+#video{
+  padding-top: 4vw;
+  padding-left: 3vw;
+  width: 50%;
+  height: auto;
 }
