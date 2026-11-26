@@ -1,5 +1,7 @@
+// La partie qui gere laffichage des branches a ete faite par cet enorme goat qu'est Claude
+
 document.addEventListener('DOMContentLoaded', () => {
-  const branches = document.querySelectorAll('.timeline__branche');
+  const branches = document.querySelectorAll('.timeline_branche');
   const articles = document.querySelectorAll('.jeu');
 
   // For each branch, keep its title element and the article ids its links point to
@@ -39,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Click on an episode link: show its branch, then center the game on the page
-  document.querySelectorAll('.timeline__jeux a').forEach(link => {
+  document.querySelectorAll('.timeline_jeux a').forEach(link => {
     link.addEventListener('click', event => {
       event.preventDefault(); // handle the scrolling ourselves
 
@@ -67,6 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
   showBranch(startIndex !== -1 ? startIndex : 0);
 });
 
+// Ca par contre c'est moi qui l'ai fait
+//
 function ChangeElement(){
 	let link = document.getElementById('original')
 	if (link.getAttribute('href') == "style1.css"){

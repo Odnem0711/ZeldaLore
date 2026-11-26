@@ -3,149 +3,142 @@
 <head>
   <meta charset="UTF-8">
   <title>ZeldaLore</title>
-  <!-- Police Inter -->
+  <!-- Police Jersey -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">  
-  
+
   <link rel="icon" sizes="32x32" href="images/favicon.ico">
   <link id ="original" rel="stylesheet" href="style1.css">
   <script src="script.js"></script>
+
 </head>
 <body>
-    <button onclick="ChangeElement()">Change css</button>
+  <button onclick="ChangeElement()">Change css</button>
   <div id="site">
-    <!-- En-tête -->
-    <header class="entete">
-      <div class="identite">
+    <!-- En tete -->
+    <header id="entete">
+      <div id="identite">
         <a href="homePage.html">
-        <!-- Remplace ce chemin par celui de ton illustration -->
         <img
-          class="identite__illustration"
+          id="identite_illustration"
           src="images/illustration.svg"
           alt="Illustration de personnages de Zelda"
         >
         </a>
-        <p class="identite__signature">
+        <p id="identite_signature">
           Signature de Lohan
         </p>
       </div>
-      <h1 id="entete__titre">* ZeldaLore *</h1>
+      <h1 id="entete_titre">* ZeldaLore *</h1>
     </header>
 
-    <div class="corps">
+    <div id="corps">
 
-      <!-- Navigation des différentes timelines -->
-      <nav class="navigation" aria-labelledby="titre-navigation">
-        <h2 class="navigation__titre" id="titre-navigation">
+      <!-- Timeline -->
+      <nav id="navigation" aria-labelledby="titre-navigation">
+        <h2 id="navigation_title">
           Timeline
         </h2>
 
-        <div class="timeline">
+        <div id="timeline">
 
-          <section class="timeline__branche">
+          <section class="timeline_branche">
             <h3>Début de la legende</h3>
 
-            <ul class="timeline__jeux">
-              <li class="timeline__jeu">
+            <ul class="timeline_jeux">
+              <li class="timeline_jeu">
                 <a href="#jeu-sky">The Legend of Zelda : Skyward Sword</a>
               </li>
-              <li class="timeline__jeu">
+              <li class="timeline_jeu">
                 <a href="#jeu-tmc">The Legend of Zelda : The Minish Cap</a>
               </li>
-              <li class="timeline__jeu">
+              <li class="timeline_jeu">
                 <a href="#jeu-4s">The Legend of Zelda : Four Swords</a>
               </li>
-              <li class="timeline__jeu">
+              <li class="timeline_jeu">
                 <a href="#jeu-oot">The Legend of Zelda : Ocarina of Time</a>
               </li>
             </ul>
-          </section>
-
-          <section class="timeline__branche">
+            <br>
             <h3>Timeline de la defaite</h3>
 
-            <ul class="timeline__jeux">
-              <li class="timeline__jeu">
+            <ul class="timeline_jeux">
+              <li class="timeline_jeu">
                 <a href="#jeu-lttp">The Legend of Zelda : A Link to the Past</a>
               </li>
-              <li class="timeline__jeu">
+              <li class="timeline_jeu">
                 <a href="#jeu-la">The Legend of Zelda : Link's Awakening</a>
               </li>
-              <li class="timeline__jeu">
+              <li class="timeline_jeu">
                 <a href="#jeu-oos">The Legend of Zelda : Oracle of Seasons</a>
               </li>
-              <li class="timeline__jeu">
+              <li class="timeline_jeu">
                 <a href="#jeu-ooa">The Legend of Zelda : Oracle of Ages</a>
               </li>
-              <li class="timeline__jeu">
+              <li class="timeline_jeu">
                 <a href="#jeu-lbw">The Legend of Zelda : A Link Between Worlds</a>
               </li>
-              <li class="timeline__jeu">
+              <li class="timeline_jeu">
                 <a href="#jeu-tfh">The Legend of Zelda : Tri Force Heroes</a>
               </li>
-              <li class="timeline__jeu">
+              <li class="timeline_jeu">
                 <a href="#jeu-eow">The Legend of Zelda : Echoes of Wisdom</a>
               </li>
-              <li class="timeline__jeu">
+              <li class="timeline_jeu">
                 <a href="#jeu-loz">The Legend of Zelda</a>
               </li>
-              <li class="timeline__jeu">
+              <li class="timeline_jeu">
                 <a href="#jeu-aol">Zelda II : The Adventure of Link</a>
               </li>
             </ul>
-          </section>
-
-          <section class="timeline__branche">
+            <br>
             <h3>Timeline de l’enfance</h3>
 
-            <ul class="timeline__jeux">
-              <li class="timeline__jeu">
+            <ul class="timeline_jeux">
+              <li class="timeline_jeu">
                 <a href="#jeu-MM">The Legend of Zelda : Majora's Mask</a>
               </li>
             </ul>
             
-            <ul class="timeline__jeux">
-              <li class="timeline__jeu">
+            <ul class="timeline_jeux">
+              <li class="timeline_jeu">
                 <a href="#jeu-TP">The Legend of Zelda : Twilight Princess</a>
               </li>
             </ul>
 
-            <ul class="timeline__jeux">
-              <li class="timeline__jeu">
+            <ul class="timeline_jeux">
+              <li class="timeline_jeu">
                 <a href="#jeu-FSA">The Legend of Zelda : Four Swords Adventures</a>
               </li>
             </ul>
-          </section>
-
-          <section class="timeline__branche">
+            <br>
             <h3>Timeline de l’age adulte</h3>
-	    <ul class="timeline__jeux">
-              <li class="timeline__jeu">
+	    <ul class="timeline_jeux">
+              <li class="timeline_jeu">
                 <a href="#jeu-ww">The Legend of Zelda : The Wind Waker</a>
               </li>
-	      
-	      <li class="timeline__jeu">
+
+	      <li class="timeline_jeu">
 		<a href="#jeu-hg">The Legend of Zelda : Phantom Hourglass</a>
 	      </li>
 
-	      <li class="timeline__jeu">
+	      <li class="timeline_jeu">
 		<a href="#jeu-st">The Legend of Zelda : Spirit Tracks</a>
 	      </li>
             </ul>
-	  </section>
 
-          <section class="timeline__branche">
+            <br>
             <h3>Univers Breath of the Wild</h3>
 
-            <ul class="timeline__jeux">
-              <li class="timeline__jeu">
+            <ul class="timeline_jeux">
+              <li class="timeline_jeu">
                 <a href="#jeu-botw">The Legend of Zelda : Breath of the Wild</a>
               </li>
-              <li class="timeline__jeu">
+              <li class="timeline_jeu">
                 <a href="#jeu-èdf">Hyrule Warriors : L'Ère du Fléau</a>
               </li>
-              <li class="timeline__jeu">
+              <li class="timeline_jeu">
                 <a href="#jeu-totk">The Legend of Zelda : Tears of the Kingdom</a>  
               </li>
             </ul>
@@ -155,7 +148,7 @@
       </nav>
 
       <!-- Informations sur les jeux -->
-      <main class="contenu" aria-label="Présentation des jeux">
+      <main id="contenu" aria-label="Présentation des jeux">
         <article class="jeu" id="jeu-sky" aria-labelledby="titre-jeu-sky">
           <header class="jeu__entete">
             <img
@@ -759,6 +752,6 @@
       </main>
     </div>
   </div>
-  <a id="scroll-top" href="#entete__titre"><img src="images/fleche.png" alt="Fleche vers le haut"></a>
+  <a id="scroll-top" href="#entete_titre"><img src="images/fleche.png" alt="Fleche vers le haut"></a>
 </body>
 </html>
