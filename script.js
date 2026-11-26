@@ -1,16 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const branches = document.querySelectorAll('.timeline__branche');
   const articles = document.querySelectorAll('.jeu');
 
-  // For each branch, keep its title element and the article ids its links point to
-  const branchData = Array.from(branches).map(branch => ({
-    element: branch,
-    title: branch.querySelector('h3'),
-    ids: Array.from(branch.querySelectorAll('a[href^="#"]'))
-      .map(link => link.getAttribute('href').substring(1))
-  }));
+  // Each h3 in the nav starts a branch; its games are the links up to the next h3
+  const branchData = Array.from(document.querySelectorAll('.timeline_branche h3')).map(title => {
+    const ids = [];
+    let el = title.nextElementSibling;
+    while (el && el.tagName !== 'H3') {
+      el.querySelectorAll('a[href^="#"]').forEach(link => {
+        ids.push(link.getAttribute('href').substring(1));
+      });
+      el = el.nextElementSibling;
+    }
+    return { title, ids };
+  });
 
-  // Hide all games, then show the games of the chosen branch
   function showBranch(index) {
     articles.forEach(article => article.classList.add('is-hidden'));
 
@@ -19,29 +22,29 @@ document.addEventListener('DOMContentLoaded', () => {
       if (article) article.classList.remove('is-hidden');
     });
 
-    branches.forEach(branch => branch.classList.remove('active'));
-    branchData[index].element.classList.add('active');
+    branchData.forEach(branch => branch.title.classList.remove('active'));
+    branchData[index].title.classList.add('active');
   }
 
-  // Find which branch contains a given article id
   function findBranchIndex(id) {
     return branchData.findIndex(branch => branch.ids.includes(id));
   }
 
-  // Click on a branch title shows that branch
+  // Click on a branch title
   branchData.forEach((branch, index) => {
     branch.title.addEventListener('click', () => {
       showBranch(index);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
       if (branch.ids.length) {
         history.pushState(null, '', '#' + branch.ids[0]);
       }
     });
   });
 
-  // Click on an episode link: show its branch, then center the game on the page
-  document.querySelectorAll('.timeline__jeux a').forEach(link => {
+  // Click on an episode link
+  document.querySelectorAll('.timeline_jeux a').forEach(link => {
     link.addEventListener('click', event => {
-      event.preventDefault(); // handle the scrolling ourselves
+      event.preventDefault();
 
       const id = link.getAttribute('href').substring(1);
       const index = findBranchIndex(id);
@@ -54,15 +57,23 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-// Back and forward buttons: show the branch matching the URL
+
   window.addEventListener('popstate', () => {
     const id = window.location.hash.substring(1);
     const index = findBranchIndex(id);
     if (index !== -1) showBranch(index);
   });
 
-  // On load: show the branch from the URL if there is one, otherwise the first branch
   const hash = window.location.hash.substring(1);
   const startIndex = findBranchIndex(hash);
   showBranch(startIndex !== -1 ? startIndex : 0);
 });
+
+function ChangeStyle() {
+  let link = document.getElementById('original');
+  if (link.getAttribute('href') == "style1.css") {
+    link.setAttribute('href', 'style2.css');
+  } else {
+    link.setAttribute('href', 'style1.css');
+  }
+}
