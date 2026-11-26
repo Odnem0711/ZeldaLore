@@ -69,8 +69,10 @@ document.addEventListener('DOMContentLoaded', () => {
   showBranch(startIndex !== -1 ? startIndex : 0);
 });
 
+const audio = new Audio('Sounds/sound.mp3');
 function ChangeStyle() {
   let link = document.getElementById('original');
+  audio.play();
   if (link.getAttribute('href') == "style1.css") {
     link.setAttribute('href', 'style2.css');
   } else {
